@@ -1,0 +1,24 @@
+{
+  "name": "ana-pereira-site",
+  "version": "1.0.0",
+  "description": "Ana pereira website",
+  "main": "docs.js",
+  "homepage": "https://diogoson11.github.io/ana-pereira/",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d views"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "owl.carousel": "^2.3.4",
+    "swiper": "^8.4.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
+  }
+}
