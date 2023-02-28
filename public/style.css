@@ -1215,6 +1215,5 @@ textarea.contact-form-text{
 }
 
 p  {
-  text-align:center;
-  word-spacing:2px;
+  text-justify: inter-character;
 }
