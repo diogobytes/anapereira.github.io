@@ -1,9 +1,7 @@
 
 const express = require("express");
 const app = express(); // start an express app
-const path = require("path"); // relative windows or Mac
-const bodyParser = require("body-parser");
-
+const port = process.env.PORT || 5500;
 const router = require("./routes/routing");
 
 
@@ -16,13 +14,13 @@ const router = require("./routes/routing");
     // CSS
     // ETC
 app.use(express.static("public")); // sending static files 
-app.use(bodyParser());
+
 
 app.use("/", router);
 
 
-app.listen(5500, () => {
-    console.log("App is starting at port ", 5500);
+app.listen(port, () => {
+    console.log("App is starting at port ", port);
 }); // required
 
 
