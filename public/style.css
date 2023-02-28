@@ -1215,6 +1215,10 @@ textarea.contact-form-text{
 }
 
 p {
-  text-align: start;
-  word-spacing: -2px;
+  
+
+text-align: justify;
+text-justify: distribute;
+text-align-last: left;
+
 }
