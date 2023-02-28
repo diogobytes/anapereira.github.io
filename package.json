@@ -6,7 +6,7 @@
   "homepage": "https://diogoson11.github.io/anapereira.github.io/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d public",
+    "deploy": "gh-pages -d views",
     "build": "echo 'No build steps required.'"
     
   },
