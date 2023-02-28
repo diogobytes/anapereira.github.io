@@ -2,7 +2,8 @@
 const express = require("express");
 const app = express(); // start an express app
 const port = process.env.PORT || 5500;
-const router = require("./routes/routing");
+const path = require("path"); // window or mac
+const router = express.Router();
 
 
 // Middlewares
@@ -25,6 +26,21 @@ app.listen(port, () => {
 
 
 
+router.get('/', (request, response) => {
+    response.sendFile(path.join(__dirname, "views/index.html"));
+});
+
+
+router.get('/aboutme', (request, response) => {
+    response.sendFile(path.join(__dirname, "views/aboutme.html"));
+});
+router.get('/thankyou', (request, response) => {
+    response.sendFile(path.join(__dirname, "views/thankyou.html"));
+});
+
+router.get("*", (req, res) => {
+    res.json("Page not found");
+});
 
 
 
