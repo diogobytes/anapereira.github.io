@@ -25,9 +25,7 @@ body {
   
 }
 
-p  {
-  text-align: left;
-}
+
 ul {
   margin: 0;
   padding: 0;
@@ -1214,4 +1212,9 @@ textarea.contact-form-text{
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+p {
+  text-align: start;
+  word-spacing: -2px;
 }
