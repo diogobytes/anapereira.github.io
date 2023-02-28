@@ -1214,11 +1214,7 @@ textarea.contact-form-text{
   text-align: center;
 }
 
-p {
-  
-
-text-align: justify;
-text-justify: distribute;
-text-align-last: left;
-
+p  {
+  text-align:center;
+  word-spacing:2px;
 }
