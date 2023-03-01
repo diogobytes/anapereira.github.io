@@ -197,6 +197,7 @@ blockquote cite::after {
 
 .section {
   padding: 6.5rem 0;
+  background-color: white;
 }
 @media (min-width: 1200px) {
   .section {
@@ -224,6 +225,7 @@ blockquote cite::after {
   background: hsl(219deg, 97%, 62%);
   color: hsl(0deg, 0%, 100%);
   box-shadow: 0px 4px 60px rgba(62, 130, 252, 0.35);
+  width: auto;
 }
 .btn--primary:hover {
   background: #0e61fb;
@@ -1051,7 +1053,7 @@ blockquote cite::after {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 4rem;
+  padding-bottom: 15rem;
   width: 75%;
 }
 .accordion .accordion-item {
@@ -1137,13 +1139,13 @@ blockquote cite::after {
   will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
-  font-size: 1.6rem;
-  font-weight: 300;
+  font-size: 1.4rem;
+  font-weight: 400;
   margin: 2em 0;
 }
 .container__faq {
   text-align: center;
-  min-height: 40vh;
+  min-height: 5vh;
 }
 
 .contact-section{
@@ -1214,6 +1216,3 @@ textarea.contact-form-text{
   text-align: center;
 }
 
-p  {
-  text-justify: inter-character;
-}
