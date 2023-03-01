@@ -21,8 +21,10 @@ body {
   color: hsl(227deg, 9%, 40%);
   font-size: 1.8rem;
   line-height: 2.7rem;
+  background: white;
+  /*
   background: hsl(195deg, 100%, 99%);
-  
+  */
 }
 
 
@@ -197,12 +199,15 @@ blockquote cite::after {
 
 .section {
   padding: 6.5rem 0;
-  background-color: white;
 }
 @media (min-width: 1200px) {
   .section {
     padding: 13rem 0;
   }
+}
+
+.white {
+  background-color: white;
 }
 
 .btn {
@@ -837,7 +842,7 @@ blockquote cite::after {
 
 .container__contacts textarea.input {
   padding: 0.8rem 1.2rem;
-  min-height: 150px;
+  min-height: 200px;
   border-radius: 22px;
   resize: none;
   overflow-y: auto;
@@ -1139,13 +1144,13 @@ blockquote cite::after {
   will-change: opacity, max-height;
 }
 .accordion .accordion-content p {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   font-weight: 400;
-  margin: 2em 0;
+  margin: 1em 0;
+  min-height: auto;
 }
 .container__faq {
   text-align: center;
-  min-height: 5vh;
 }
 
 .contact-section{
