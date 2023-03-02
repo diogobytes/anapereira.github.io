@@ -4,10 +4,15 @@ const header = document.querySelector('.header');
 const nav = document.querySelector('.nav');
 // select nav trigger
 const navTrigger = document.querySelector('.header__nav-trigger');
-
+const active = nav.classList.contains("active");
 // open - close menu
 navTrigger.addEventListener('click', () => {
-  nav.classList.toggle('open');
+  if (active){
+    nav.classList.toggle('close');
+  }else {
+    nav.classList.toggle('open');
+  }
+  
 });
 
 // header background on scroll

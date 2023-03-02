@@ -98,6 +98,7 @@ img {
   display: block;
 }
 
+
 /* blockquote styling */
 
 blockquote {
@@ -275,7 +276,7 @@ blockquote cite::after {
     max-width: 30rem;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .section-primary__img {
     max-width: 48.8rem;
     margin: 0;
@@ -407,7 +408,7 @@ blockquote cite::after {
   position: relative;
   z-index: 1;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .hero {
     height: 60rem;
   }
@@ -436,6 +437,7 @@ blockquote cite::after {
     flex-direction: row;
   }
 }
+
 .hero__left, .hero__right {
   flex: 1;
 }
@@ -453,7 +455,7 @@ blockquote cite::after {
 @media (min-width: 768px) {
   .hero__right {
     display: flex;
-    justify-content: end;
+    justify-content: center;
   }
 }
 @media (min-width: 1200px) {
@@ -1059,7 +1061,7 @@ blockquote cite::after {
   justify-content: center;
   margin: 0 auto;
   padding-bottom: 15rem;
-  width: 75%;
+  width: 85%;
 }
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
