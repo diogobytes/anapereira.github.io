@@ -31,12 +31,23 @@ router.get('/', (request, response) => {
 });
 
 
-router.get('/aboutme', (request, response) => {
+router.get('/sobre-mim', (request, response) => {
     response.sendFile(path.join(__dirname, "views/aboutme.html"));
 });
-router.get('/thankyou', (request, response) => {
+router.get('/enviado-sucesso', (request, response) => {
     response.sendFile(path.join(__dirname, "views/thankyou.html"));
 });
+
+router.get('/contactos', (request, response) => {
+    response.sendFile(path.join(__dirname, "views/contacts.html"));
+});
+router.get('/faq', (request, response) => {
+    response.sendFile(path.join(__dirname, "views/faq.html"));
+});
+router.get('/servicos', (request, response) => {
+    response.sendFile(path.join(__dirname, "views/servicos.html"));
+});
+
 
 router.get("*", (req, res) => {
     res.json("Page not found");

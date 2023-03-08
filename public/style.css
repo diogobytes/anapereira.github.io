@@ -97,7 +97,13 @@ img {
   width: 100%;
   display: block;
 }
-
+p {
+ 
+  line-height: 30px;
+  text-align: distribute;
+  
+ 
+}
 
 /* blockquote styling */
 
@@ -166,14 +172,6 @@ blockquote cite::after {
 
 
 
-/* resusable classes */
-.container {
-  width: 100%;
-  max-width: 1200px;
-  padding: 0 3rem;
-  margin: auto;
-  overflow: hidden;
-}
 
 .pretitle {
   font-size: 1.6rem;
@@ -253,6 +251,7 @@ blockquote cite::after {
   flex-direction: column;
   align-items: center;
   text-align: center;
+ 
 }
 @media (min-width: 768px) {
   .section-primary__container {
@@ -271,12 +270,12 @@ blockquote cite::after {
   max-width: 40rem;
   margin: 3rem 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   .section-primary__img {
     max-width: 30rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 760px) {
   .section-primary__img {
     max-width: 48.8rem;
     margin: 0;
@@ -1055,6 +1054,8 @@ blockquote cite::after {
   }
 }
 
+
+
 .faq__container {
   display: flex;
   align-items: center;
@@ -1062,6 +1063,14 @@ blockquote cite::after {
   margin: 0 auto;
   padding-bottom: 15rem;
   width: 85%;
+  margin-top:80px;
+}
+
+@media (min-width: 200px) {
+  .faq__container {
+   display: flex;
+   justify-content: center;
+  }
 }
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
@@ -1223,3 +1232,59 @@ textarea.contact-form-text{
   text-align: center;
 }
 
+.center-img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+
+}
+.align-title {
+  text-align: center;
+}
+.contact-method {
+  width: 400px;
+  height: 140px;
+  display: inline-block;
+  background: #4082FC;
+  margin: 10px;
+  color: #fff;
+  position: relative;
+  text-align: center;
+
+}
+.contact-method i{
+
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  line-height: 140px;
+
+}
+@media (max-width: 896px) {
+  span {
+    font-size: smaller;
+
+  }
+  .contact-method {
+    width: 350px;
+  }
+}
+.contact-method span{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 10px 0;
+
+}
+
+
+/* resusable classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 3rem;
+  margin: auto;
+  overflow: hidden;
+}
